@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 const Header = () => {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar  bg-orange-400 mb-4">
       <div className="flex-none">
         <div className="drawer">
           <input id="my-drawer" type="checkbox" className="drawer-toggle" />
@@ -43,9 +43,9 @@ const Header = () => {
         </div>
       </div>
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl"> AFBL MIS Report</a>
+        <Link to="/" className="btn btn-ghost text-xl">AFBL MIS Report</Link>
       </div>
-      <div className="flex-none"></div>
+      <div className="flex-none">{new Date().toLocaleString()}</div>
     </div>
   );
 };
