@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 const Header = () => {
   return (
     <div className="navbar bg-base-100">
@@ -31,10 +33,10 @@ const Header = () => {
             <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
               {/* Sidebar content here */}
               <li>
-                <a>Daily Report</a>
+                <Link to="/dailyReport">Daily Report</Link>
               </li>
               <li>
-                <a>Periodic Report </a>
+                <Link to="/periodicReport">Periodic Report</Link>
               </li>
             </ul>
           </div>
