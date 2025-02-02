@@ -1,10 +1,13 @@
 import { Outlet } from "react-router";
+import Header from "../Pages/Shared/Header/Header";
+import Footer from "../Pages/Shared/Footer/Footer";
 
 const Main = () => {
   return (
     <div>
-      <h2>This is Main</h2>
+      <Header />
       <Outlet />
+      <Footer />
     </div>
   );
 };
